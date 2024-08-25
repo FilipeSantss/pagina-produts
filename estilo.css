@@ -12,7 +12,7 @@ h1 {
 .links-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; /* Centraliza os produtos horizontalmente */
 }
 
 .product {
@@ -23,12 +23,17 @@ h1 {
     width: 200px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo dentro do produto */
 }
 
 .product-img {
     max-width: 100%;
     height: auto;
     cursor: pointer;
+    padding: 10px; /* Espaço ao redor da imagem dentro do contêiner */
+    box-sizing: border-box; /* Inclui padding no cálculo da largura da imagem */
 }
 
 a {
@@ -54,13 +59,18 @@ a:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza o modal na tela */
 }
 
 .modal-content {
-    margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
+    margin: auto; /* Garante a centralização horizontal */
+    padding: 20px; /* Espaço ao redor da imagem no modal */
+    box-sizing: border-box; /* Inclui padding no cálculo da largura da imagem */
 }
 
 .close {
@@ -90,6 +100,7 @@ a:hover {
 #prev-btn:hover, #next-btn:hover {
     background-color: #0056b3;
 }
+
 /* Estilo para os botões de navegação */
 .prev-button, .next-button {
     padding: 10px 20px;
@@ -114,4 +125,5 @@ a:hover {
     box-shadow: 0 1px 2px rgba(0,0,0,0.2); /* Reduzir a sombra quando pressionado */
     transform: translateY(2px); /* Simula um efeito de "pressionado" */
 }
+
 
