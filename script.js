@@ -11,7 +11,7 @@ var currentIndex = 0; // Índice da imagem atual
 function showModal(imageUrls) {
     images = imageUrls.split(','); // Divide a string em um array de URLs
     currentIndex = 0; // Inicia com a primeira imagem
-    modal.style.display = "block";
+    modal.style.display = "flex"; // Exibe o modal usando flexbox para centralização
     modalImg.src = images[currentIndex]; // Exibe a primeira imagem
 }
 
@@ -56,3 +56,4 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
