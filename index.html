@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Produtos do Mercado Livre</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Lista de Produtos do Mercado Livre</h1>
+    <div class="links-container">
+        <!-- Produto 1 -->
+        <div class="product">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_922960-MLB78290511720_082024-F.webp" alt="Produto 1" class="product-img">
+            <!-- Lista de URLs de imagens, separadas por vírgulas -->
+            <a href="javascript:void(0);" class="product-link" data-images="https://http2.mlstatic.com/D_NQ_NP_2X_922960-MLB78290511720_082024-F.webp,https://http2.mlstatic.com/D_NQ_NP_2X_922960-MLB78290511720_082024-F.webp,https://http2.mlstatic.com/D_NQ_NP_2X_693113-MLB71781797002_092023-F.webp,https://http2.mlstatic.com/D_NQ_NP_2X_872520-MLB71781777090_092023-F.webp">Produto 1</a>
+        </div>
+        
+        <!-- Produto 2 -->
+        <div class="product">
+            <img src="URL_DA_IMAGEM_DO_PRODUTO_2_1" alt="Produto 2" class="product-img">
+            <a href="#" class="product-link" data-images="URL_DA_IMAGEM_DO_PRODUTO_2_1,URL_DA_IMAGEM_DO_PRODUTO_2_2,URL_DA_IMAGEM_DO_PRODUTO_2_3">Produto 2</a>
+        </div>
+
+        <!-- Adicione mais produtos até completar 20 -->
+        <!-- ... -->
+    </div>
+
+    <!-- Modal para exibir a galeria de imagens -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div class="modal-controls">
+            <button id="prev-btn">&#10094; Anterior</button>
+            <button id="next-btn">Próxima &#10095;</button>
+        </div>
+    </div>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
