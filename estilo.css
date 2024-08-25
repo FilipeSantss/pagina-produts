@@ -12,7 +12,7 @@ h1 {
 .links-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centraliza os produtos horizontalmente */
+    justify-content: center;
 }
 
 .product {
@@ -23,17 +23,12 @@ h1 {
     width: 200px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo dentro do produto */
 }
 
 .product-img {
     max-width: 100%;
     height: auto;
     cursor: pointer;
-    padding: 10px; /* Espaço ao redor da imagem dentro do contêiner */
-    box-sizing: border-box; /* Inclui padding no cálculo da largura da imagem */
 }
 
 a {
@@ -59,32 +54,20 @@ a:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.8);
-    display: flex;
     justify-content: center;
     align-items: center; /* Centraliza o modal na tela */
 }
 
 .modal-content {
-    display: block;
     width: 80%;
     max-width: 700px;
     margin: auto; /* Garante a centralização horizontal */
-    padding: 20px; /* Espaço ao redor da imagem no modal */
-    box-sizing: border-box; /* Inclui padding no cálculo da largura da imagem */
-}
-
-.close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
+    background-color: #fff; /* Fundo branco para a imagem */
 }
 
 .modal-controls {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
 }
 
@@ -95,35 +78,21 @@ a:hover {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 18px;
+    margin: 0 10px; /* Espaço entre os botões */
 }
 
 #prev-btn:hover, #next-btn:hover {
     background-color: #0056b3;
 }
 
-/* Estilo para os botões de navegação */
-.prev-button, .next-button {
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #007bff; /* Cor de fundo azul */
-    color: white;
-    border: none;
-    border-radius: 5px;
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    outline: none;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra leve */
-}
-
-.prev-button:hover, .next-button:hover {
-    background-color: #0056b3; /* Cor de fundo azul escuro no hover */
-}
-
-.prev-button:active, .next-button:active {
-    background-color: #003d7a; /* Cor de fundo azul ainda mais escuro quando pressionado */
-    box-shadow: 0 1px 2px rgba(0,0,0,0.2); /* Reduzir a sombra quando pressionado */
-    transform: translateY(2px); /* Simula um efeito de "pressionado" */
 }
 
 
