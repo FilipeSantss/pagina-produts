@@ -64,6 +64,13 @@ a:hover {
     max-width: 700px;
     margin: auto; /* Garante a centralização horizontal */
     background-color: #fff; /* Fundo branco para a imagem */
+    position: relative; /* Necessário para o posicionamento do botão de fechar */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+.modal-img {
+    width: 100%;
+    height: auto;
 }
 
 .modal-controls {
@@ -88,8 +95,8 @@ a:hover {
 
 .close {
     position: absolute;
-    top: 20px;
-    right: 35px;
+    top: 10px;
+    right: 10px;
     color: #fff;
     font-size: 40px;
     font-weight: bold;
@@ -108,4 +115,5 @@ a:hover {
         padding: 8px 16px;
     }
 }
+
 
